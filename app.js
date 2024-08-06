@@ -1,5 +1,4 @@
 'use strict';
-import chalk from "chalk";
 import assert from "node:assert";
 /**
  * 与えられた自然数の階乗を返す
@@ -12,7 +11,6 @@ function factorial(n) {
   for(let i = 2; i <= n; i++) {
     result *= i;
   }
-  console.log(chalk.green(result));
   return result;
 }
 assert.strictEqual(factorial(1), 1, `1の階乗は1ですが、実際は${factorial(1) }でした`);
